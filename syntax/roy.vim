@@ -19,8 +19,8 @@ syn keyword royStatement true false
 
 "defined type or data
 syn keyword type data let nextgroup=roySimbol skipwhite
-syn match   roySimbol  "\%(\%(type\s\|data\s\|let\s\)\s*\)\@<=\h\%(\w\)*" contained
-syn match   roySimbol  "[a-zA-Z][a-zA-Z0-9]*:"
+syn match   roySimbol  "\%(\%(type\s\|data\s\|let\s\)\s*\)\@<=\h\%([a-zA-Z0-9$_]\)*" contained
+syn match   roySimbol  "[a-zA-Z$_][a-zA-Z0-9$_]*:"
 
 "Braces,Parens
 "syn match   royBraces "[{}]"
