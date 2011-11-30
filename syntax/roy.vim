@@ -12,11 +12,10 @@ endif
 "keywords
 syn keyword royStatement match case
 syn keyword royStatement if else
-syn keyword royStatement type data let
 syn keyword royStatement case
 
 "defined type or data
-syn keyword type data let nextgroup=roySimbol skipwhite
+syn keyword royStatement type data let nextgroup=roySimbol skipwhite
 syn match   roySimbol  "\%(\%(type\s\|data\s\|let\s\)\s*\)\@<=\h\%(\w\)*" contained
 syn match   roySimbol  "[a-zA-Z][a-zA-Z0-9]*:"
 
