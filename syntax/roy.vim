@@ -10,12 +10,15 @@ elseif exists("b:current_syntax")
 endif
 
 "keywords
-syn keyword royStatement match case
+syn keyword royStatement match case bind
 syn keyword royStatement if else
 syn keyword royStatement case
+syn keyword royStatement macro do return
+syn keyword royStatement with
+syn keyword royStatement true false
 
 "defined type or data
-syn keyword royStatement type data let nextgroup=roySimbol skipwhite
+syn keyword type data let nextgroup=roySimbol skipwhite
 syn match   roySimbol  "\%(\%(type\s\|data\s\|let\s\)\s*\)\@<=\h\%(\w\)*" contained
 syn match   roySimbol  "[a-zA-Z][a-zA-Z0-9]*:"
 
